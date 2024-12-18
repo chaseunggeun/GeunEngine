@@ -23,12 +23,12 @@ namespace geun
 			mX += 0.01f;
 		}
 
-		if (Input::GetKey(eKeyCode::W))
+		if (Input::GetKey(eKeyCode::Up))
 		{
 			mY -= 0.01f;
 		}
 
-		if (Input::GetKey(eKeyCode::S))
+		if (Input::GetKey(eKeyCode::Down))
 		{
 			mY += 0.01f;
 		}
