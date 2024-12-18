@@ -17,10 +17,12 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunGameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunInput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunApplication.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunGameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunInput.cpp" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 #include "geunApplication.h"
+#include "geunInput.h"
 
 namespace geun
 {
@@ -16,6 +17,7 @@ namespace geun
 		mHwnd = hwnd;
 		mHdc = GetDC(hwnd);
 		mPlayer.SetPosition(0, 0);
+		Input::Initialize();
 	}
 
 	void Application::Run()
@@ -27,6 +29,8 @@ namespace geun
 
 	void Application::Update()
 	{
+		Input::Update();
+
 		mPlayer.Update();
 	}
 	void Application::LateUpdate()
