@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project1", "Project1\Project1.vcxproj", "{24E119C7-1B7F-4361-AF05-7F18B09DA305}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor_Window", "Project1\Project1.vcxproj", "{24E119C7-1B7F-4361-AF05-7F18B09DA305}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeunEngine_Window", "GeunEngine_Window\GeunEngine_Window.vcxproj", "{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeunEngine_SOURCE", "GeunEngine_SOURCE\GeunEngine_SOURCE.vcxitems", "{A93E001E-C64E-4A0C-A5F5-F8283083951C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,11 +25,24 @@ Global
 		{24E119C7-1B7F-4361-AF05-7F18B09DA305}.Release|x64.Build.0 = Release|x64
 		{24E119C7-1B7F-4361-AF05-7F18B09DA305}.Release|x86.ActiveCfg = Release|Win32
 		{24E119C7-1B7F-4361-AF05-7F18B09DA305}.Release|x86.Build.0 = Release|Win32
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Debug|x64.ActiveCfg = Debug|x64
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Debug|x64.Build.0 = Debug|x64
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Debug|x86.ActiveCfg = Debug|Win32
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Debug|x86.Build.0 = Debug|Win32
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Release|x64.ActiveCfg = Release|x64
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Release|x64.Build.0 = Release|x64
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Release|x86.ActiveCfg = Release|Win32
+		{F93D82F4-F134-42C1-A4EF-2C63BA2BD857}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {385B4BE5-7D9B-4416-8360-8F5844369EC7}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GeunEngine_SOURCE\GeunEngine_SOURCE.vcxitems*{24e119c7-1b7f-4361-af05-7f18b09da305}*SharedItemsImports = 4
+		GeunEngine_SOURCE\GeunEngine_SOURCE.vcxitems*{a93e001e-c64e-4a0c-a5f5-f8283083951c}*SharedItemsImports = 9
+		GeunEngine_SOURCE\GeunEngine_SOURCE.vcxitems*{f93d82f4-f134-42c1-a4ef-2c63ba2bd857}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
