@@ -29,16 +29,20 @@ namespace geun
 			eKeyState state;
 			bool bPressed;
 		};
-
 		static void Initialize();
 		static void Update();
 
-		static bool GetKeyDown(eKeyCode code) { return mKeys[(UINT)code].state == eKeyState::Down; }
-		static bool GetKeyUp(eKeyCode code) { return mKeys[(UINT)code].state == eKeyState::Up; }
-		static bool GetKey(eKeyCode code) { return mKeys[(UINT)code].state == eKeyState::Pressed; }
+		static bool GetKeyDown(eKeyCode code) { return Keys[(UINT)code].state == eKeyState::Down; }
+		static bool GetKeyUp(eKeyCode code) { return Keys[(UINT)code].state == eKeyState::Up; }
+		static bool GetKey(eKeyCode code) { return Keys[(UINT)code].state == eKeyState::Pressed; }
 	private:
-		//static: 클레스 안에서만의 전역변수
-		static std::vector<Key> mKeys;
+		static void createKeys();
+		static void updateKeys();
+		static void updateKey(Input::Key& key);
+		static bool isKeyDown(eKeyCode code);
+		static void updateKeyDown(Input::Key& key);
+		static void updateKeyUp(Input::Key& key);
+		static std::vector<Key> Keys;
 	};
 }
 
