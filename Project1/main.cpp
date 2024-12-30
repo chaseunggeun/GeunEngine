@@ -6,6 +6,8 @@
 
 
 #include "..\\GeunEngine_SOURCE\\geunApplication.h"
+#include "..\\GeunEngine_Window\\geunLoadScenes.h"
+
 
 geun::Application application;
 #define MAX_LOADSTRING 100
@@ -128,6 +130,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
+
+   //load Scene
+   geun::LoadScenes();
 
    return TRUE;
 }

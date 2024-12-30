@@ -16,15 +16,21 @@
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunEntity.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunGameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunSceneManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunTime.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)GameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunEntity.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunGameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunSceneManager.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunTime.cpp" />
   </ItemGroup>
 </Project>

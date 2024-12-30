@@ -18,10 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="geunLoadScenes.h" />
+    <ClInclude Include="geunPlayScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="geunPlayScene.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f93d82f4-f134-42c1-a4ef-2c63ba2bd857}</ProjectGuid>
+    <ProjectGuid>{314be36b-3fb5-4407-8aed-c7a8f8c07212}</ProjectGuid>
     <RootNamespace>GeunEngineWindow</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -131,8 +138,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
