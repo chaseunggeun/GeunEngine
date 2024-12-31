@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="geunLoadScenes.h" />
+    <ClInclude Include="geunPlayer.h" />
     <ClInclude Include="geunPlayScene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="geunPlayer.cpp" />
     <ClCompile Include="geunPlayScene.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
