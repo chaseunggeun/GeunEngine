@@ -19,13 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="geunEndScene.h" />
     <ClInclude Include="geunLoadScenes.h" />
     <ClInclude Include="geunPlayer.h" />
     <ClInclude Include="geunPlayScene.h" />
+    <ClInclude Include="geunTitleScene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="geunEndScene.cpp" />
     <ClCompile Include="geunPlayer.cpp" />
     <ClCompile Include="geunPlayScene.cpp" />
+    <ClCompile Include="geunTitleScene.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

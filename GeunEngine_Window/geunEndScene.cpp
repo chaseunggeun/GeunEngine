@@ -1,4 +1,4 @@
-#include "geunPlayScene.h"
+#include "geunEndScene.h"
 #include "geunGameObject.h"
 #include "geunPlayer.h"
 #include "geunTransform.h"
@@ -6,13 +6,13 @@
 
 namespace geun
 {
-	PlayScene::PlayScene()
+	EndScene::EndScene()
 	{
 	}
-	PlayScene::~PlayScene()
+	EndScene::~EndScene()
 	{
 	}
-	void PlayScene::Initialize()
+	void EndScene::Initialize()
 	{
 		{
 			Player* bg = new Player();
@@ -25,21 +25,21 @@ namespace geun
 			SpriteRenderer* sr
 				= bg->AddComponent<SpriteRenderer>();
 			sr->SetName(L"SR");
-			sr->ImageLoad(L"..\\Resources\\CloudOcean.png");
+			sr->ImageLoad(L"..\\Resources\\puddy.png");
 
 
 			AddGameObject(bg);
 		}
 	}
-	void PlayScene::Update()
+	void EndScene::Update()
 	{
 		Scene::Update();
 	}
-	void PlayScene::LateUpdate()
+	void EndScene::LateUpdate()
 	{
 		Scene::LateUpdate();
 	}
-	void PlayScene::Render(HDC hdc)
+	void EndScene::Render(HDC hdc)
 	{
 		Scene::Render(hdc);
 	}

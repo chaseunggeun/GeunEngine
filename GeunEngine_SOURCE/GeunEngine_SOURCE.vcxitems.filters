@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunEntity.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunGameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunSceneManager.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunResources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunResource.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunEntity.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunGameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunSceneManager.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunResource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{7a2af450-3ff7-45a6-be99-e7f34544590e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{ef7933c1-f580-4b59-96d8-132352302313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{00536388-1f4e-4aa8-a66d-46fd30fa20f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
