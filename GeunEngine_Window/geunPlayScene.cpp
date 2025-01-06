@@ -6,6 +6,9 @@
 #include "geunInput.h"
 #include "geunTitleScene.h"
 #include "geunSceneManager.h"
+#include "geunObject.h"
+#include "geunTexture.h"
+#include"geunResources.h"
 
 namespace geun
 {
@@ -18,21 +21,24 @@ namespace geun
 	void PlayScene::Initialize()
 	{
 		{
-			bg = new Player();
-			Transform* tr
-				= bg->AddComponent<Transform>();
-			tr->SetPos(Vector2(0, 0));
 
-			tr->SetName(L"TR");
+			bg = object::Instantiate<Player>
+				(enums::eLayerType::BackGround);
+			SpriteRenderer* sr = bg->AddComponent<SpriteRenderer>();
 
-			SpriteRenderer* sr
-				= bg->AddComponent<SpriteRenderer>();
-			sr->SetName(L"SR");
-			sr->ImageLoad(L"..\\Resources\\CloudOcean.png");
+			graphics::Texture* bg = Resources::Find<graphics::Texture>(L"BG");
+			sr->SetTexture(bg);
 
-
-			AddGameObject(bg, eLayerType::BackGround);
+			// 게임 오브젝트 생성 후에 레이어와 게임 오브젝트들의 init함수를 호출
+			Scene::Initialize();
 		}
+
+		/*{
+			GameObject* puddy = object::Instantiate<GameObject>
+				(enums::eLayerType::Player, Vector2(150.0f, 150.0f));
+			SpriteRenderer* sr = puddy->AddComponent<SpriteRenderer>();
+			sr->ImageLoad(L"..\\Resources\\puddy.png");
+		}*/
 	}
 	void PlayScene::Update()
 	{
@@ -58,7 +64,7 @@ namespace geun
 	}
 	void PlayScene::OnExit()
 	{
-		Transform* tr = bg->GetComponent<Transform>();
-		tr->SetPos(Vector2(0, 0));
+		//Transform* tr = bg->GetComponent<Transform>();
+		//tr->SetPosition(Vector2(0, 0));
 	}
 }

@@ -17,11 +17,11 @@ namespace geun
 	}
 	void TitleScene::Initialize()
 	{
-		{
+		/*{
 			Player* bg = new Player();
 			Transform* tr
 				= bg->AddComponent<Transform>();
-			tr->SetPos(Vector2(0, 0));
+			tr->SetPosition(Vector2(0, 0));
 
 			tr->SetName(L"TR");
 
@@ -31,8 +31,8 @@ namespace geun
 			sr->ImageLoad(L"..\\Resources\\puddy.png");
 
 
-			AddGameObject(bg, eLayerType::BackGround);
-		}
+			AddGameObject(bg, enums::eLayerType::BackGround);
+		}*/
 	}
 	void TitleScene::Update()
 	{

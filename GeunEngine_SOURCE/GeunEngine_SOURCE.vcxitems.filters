@@ -37,8 +37,15 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)geunApplication.cpp">
       <Filter>High Level Interface</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)geunResource.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)geunResources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunResources.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunTexture.cpp">
+      <Filter>Resource\Texture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h">
@@ -83,8 +90,18 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)geunEnums.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)geunResource.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunObject.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunTexture.h">
+      <Filter>Resource\Texture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Common">
@@ -107,6 +124,12 @@
     </Filter>
     <Filter Include="High Level Interface">
       <UniqueIdentifier>{efb23168-142d-4540-8895-6ba24f3a9092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{afe2a7c3-4bdc-4d97-b401-ef95a67089f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Texture">
+      <UniqueIdentifier>{583e2df2-fa17-4529-8790-a0f9c3c34664}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

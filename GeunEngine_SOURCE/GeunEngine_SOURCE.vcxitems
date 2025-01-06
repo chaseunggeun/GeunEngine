@@ -23,11 +23,13 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)geunInput.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunLayer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunResource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunSceneManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunSpriteRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunTexture.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunTime.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunTransform.h" />
   </ItemGroup>
@@ -44,6 +46,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)geunScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunSceneManager.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunSpriteRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunTexture.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunTime.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunTransform.cpp" />
   </ItemGroup>

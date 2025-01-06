@@ -6,6 +6,7 @@
 
 
 #include "..\\GeunEngine_SOURCE\\geunApplication.h"
+#include "..\\GeunEngine_Window\\geunLoadResources.h"
 #include "..\\GeunEngine_Window\\geunLoadScenes.h"
 
 
@@ -137,6 +138,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    Gdiplus::GdiplusStartup(&gpToken, &gpsi, NULL);
 
    //load Scene
+   geun::LoadResources();
    geun::LoadScenes();
 
    return TRUE;

@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="geunEndScene.h" />
+    <ClInclude Include="geunLoadResources.h" />
     <ClInclude Include="geunLoadScenes.h" />
     <ClInclude Include="geunPlayer.h" />
     <ClInclude Include="geunPlayScene.h" />

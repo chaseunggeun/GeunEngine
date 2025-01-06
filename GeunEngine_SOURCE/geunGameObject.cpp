@@ -1,11 +1,13 @@
 #include "geunGameObject.h"
 #include "geunInput.h"
 #include "geunTime.h"
+#include "geunTransform.h"
 
 namespace geun
 {
 	GameObject::GameObject()
 	{
+		initializeTransform();
 	}
 
 	GameObject::~GameObject()
@@ -45,5 +47,10 @@ namespace geun
 		{
 			comp->Render(hdc);
 		}
+	}
+
+	void GameObject::initializeTransform()
+	{
+		AddComponent<Transform>();
 	}
 }

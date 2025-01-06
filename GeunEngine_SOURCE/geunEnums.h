@@ -1,6 +1,6 @@
 #pragma once
 
-namespace geun
+namespace geun::enums
 {
 	enum class eLayerType
 	{
@@ -10,5 +10,13 @@ namespace geun
 		//Character
 		Player,
 		Max = 16,
+	};
+
+	enum class eResourceType
+	{
+		Texture,
+		AudioClip,
+		Prefab,
+		End,
 	};
 }
