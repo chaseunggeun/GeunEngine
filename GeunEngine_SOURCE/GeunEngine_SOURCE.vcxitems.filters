@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)geunApplication.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)geunInput.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)geunTime.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunEntity.cpp">
       <Filter>Common</Filter>
     </ClCompile>
@@ -16,14 +13,34 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)geunSceneManager.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)geunMath.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)geunResources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunInput.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunTime.cpp">
+      <Filter>Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunComponent.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunSpriteRenderer.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunTransform.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunMath.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunLayer.cpp">
+      <Filter>Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunApplication.cpp">
+      <Filter>High Level Interface</Filter>
+    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)geunResource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunResources.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)geunApplication.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)geunInput.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)geunTime.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h">
       <Filter>Common</Filter>
     </ClInclude>
@@ -39,9 +56,35 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)geunScene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)geunMath.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunInput.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunTime.h">
+      <Filter>Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunComponent.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunSpriteRenderer.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunTransform.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunMath.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunLayer.h">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunApplication.h">
+      <Filter>High Level Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunEnums.h">
+      <Filter>Common</Filter>
+    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)geunResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Common">
@@ -52,6 +95,18 @@
     </Filter>
     <Filter Include="Scene">
       <UniqueIdentifier>{00536388-1f4e-4aa8-a66d-46fd30fa20f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helpers">
+      <UniqueIdentifier>{386ec7bc-d204-4399-90b7-e065ec86f232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{c9fa4eac-70d8-4f93-ad3f-4ce29dd790b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layer">
+      <UniqueIdentifier>{945fc102-8529-49af-8466-860c346f563c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="High Level Interface">
+      <UniqueIdentifier>{efb23168-142d-4540-8895-6ba24f3a9092}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

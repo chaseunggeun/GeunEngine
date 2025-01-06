@@ -18,8 +18,10 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)geunApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunComponent.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunEnums.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunGameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunLayer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunMath.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunResource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h" />
@@ -35,6 +37,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)geunEntity.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunGameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunLayer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunMath.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunResource.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunResources.cpp" />

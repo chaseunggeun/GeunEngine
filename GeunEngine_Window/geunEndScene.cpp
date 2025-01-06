@@ -28,7 +28,7 @@ namespace geun
 			sr->ImageLoad(L"..\\Resources\\puddy.png");
 
 
-			AddGameObject(bg);
+			AddGameObject(bg, eLayerType::BackGround);
 		}
 	}
 	void EndScene::Update()

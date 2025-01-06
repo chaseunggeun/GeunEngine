@@ -1,4 +1,7 @@
 #include "geunPlayer.h"
+#include "geunInput.h"
+#include "geunTransform.h"
+#include "geunTime.h"
 
 namespace geun
 {
@@ -13,6 +16,14 @@ namespace geun
 	void Player::LateUpdate()
 	{
 		GameObject::LateUpdate();
+
+		if (Input::GetKey(eKeyCode::Right))
+		{
+			Transform* tr = GetComponent<Transform>();
+			Vector2 pos = tr->GetPosition();
+			pos.x += 100.0f * Time::DeltaTime();
+			tr->SetPos(pos);
+		}
 	}
 	void Player::Render(HDC hdc)
 	{
