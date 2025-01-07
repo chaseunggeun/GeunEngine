@@ -2,11 +2,12 @@
 #include "geunGameObject.h"
 #include "geunTransform.h"
 #include "geunTexture.h"
+#include "geunRenderer.h"
 
 namespace geun
 {
 	SpriteRenderer::SpriteRenderer()
-		: Component()
+		: Component(enums::eComponentType::SpriteRenderer)
 		, mTexture(nullptr)
 		, mSize(Vector2::One)
 	{
@@ -33,6 +34,7 @@ namespace geun
 
 		Transform* tr = GetOwner()->GetComponent<Transform>();
 		Vector2 pos = tr->GetPosition();
+		pos = renderer::mainCamera->CalculatePosition(pos);
 
 		if (mTexture->GetTextureType() == graphics::Texture::eTextureType::Bmp)
 		{

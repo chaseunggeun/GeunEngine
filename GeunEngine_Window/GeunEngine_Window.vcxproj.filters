@@ -17,6 +17,9 @@
       <Filter>Scenes</Filter>
     </ClInclude>
     <ClInclude Include="geunLoadResources.h" />
+    <ClInclude Include="geunPlayerScript.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Scenes">
@@ -24,6 +27,9 @@
     </Filter>
     <Filter Include="Contents">
       <UniqueIdentifier>{e57dfcb4-005b-4145-831b-6f7ecd573308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{8b0d846d-72c3-4b68-b5a1-ddbfaa891106}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="geunEndScene.cpp">
       <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="geunPlayerScript.cpp">
+      <Filter>Scripts</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

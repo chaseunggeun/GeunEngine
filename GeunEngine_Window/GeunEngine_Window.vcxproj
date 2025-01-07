@@ -23,12 +23,14 @@
     <ClInclude Include="geunLoadResources.h" />
     <ClInclude Include="geunLoadScenes.h" />
     <ClInclude Include="geunPlayer.h" />
+    <ClInclude Include="geunPlayerScript.h" />
     <ClInclude Include="geunPlayScene.h" />
     <ClInclude Include="geunTitleScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="geunEndScene.cpp" />
     <ClCompile Include="geunPlayer.cpp" />
+    <ClCompile Include="geunPlayerScript.cpp" />
     <ClCompile Include="geunPlayScene.cpp" />
     <ClCompile Include="geunTitleScene.cpp" />
   </ItemGroup>

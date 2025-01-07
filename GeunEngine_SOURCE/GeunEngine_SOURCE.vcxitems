@@ -16,6 +16,7 @@
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunCamera.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunComponent.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunEntity.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunEnums.h" />
@@ -24,10 +25,12 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)geunLayer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunMath.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunRenderer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunResource.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunResources.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunSceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)geunScript.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunSpriteRenderer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunTexture.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)geunTime.h" />
@@ -35,16 +38,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)geunApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunCamera.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunComponent.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunEntity.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunGameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunInput.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunLayer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunResource.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunResources.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunSceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)geunScript.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunSpriteRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunTexture.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)geunTime.cpp" />

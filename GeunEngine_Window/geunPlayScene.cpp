@@ -8,7 +8,10 @@
 #include "geunSceneManager.h"
 #include "geunObject.h"
 #include "geunTexture.h"
-#include"geunResources.h"
+#include "geunResources.h"
+#include "geunPlayerScript.h"
+#include "geunCamera.h"
+#include "geunRenderer.h"
 
 namespace geun
 {
@@ -20,18 +23,34 @@ namespace geun
 	}
 	void PlayScene::Initialize()
 	{
-		{
 
-			bg = object::Instantiate<Player>
-				(enums::eLayerType::BackGround);
-			SpriteRenderer* sr = bg->AddComponent<SpriteRenderer>();
+		//main camera
+		GameObject* camera = object::Instantiate<GameObject>(enums::eLayerType::None, Vector2(343.0, 442.0f));
+		Camera* cameraComp = camera->AddComponent<Camera>();
+		renderer::mainCamera = cameraComp;
+		//camera->AddComponent<PlayerScript>();
 
-			graphics::Texture* bg = Resources::Find<graphics::Texture>(L"BG");
-			sr->SetTexture(bg);
 
-			// 게임 오브젝트 생성 후에 레이어와 게임 오브젝트들의 init함수를 호출
-			Scene::Initialize();
-		}
+		mPlayer = object::Instantiate<Player>
+			(enums::eLayerType::Player);
+		SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
+		sr->SetSize(Vector2(3.0f, 3.0f));
+		mPlayer->AddComponent<PlayerScript>();
+
+		graphics::Texture* pacmanTexture = Resources::Find<graphics::Texture>(L"PacMan");
+		sr->SetTexture(pacmanTexture);
+
+
+		GameObject* bg = object::Instantiate<GameObject>
+			(enums::eLayerType::BackGround);
+		SpriteRenderer* bgSr = bg->AddComponent<SpriteRenderer>();
+		bgSr->SetSize(Vector2(3.0f, 3.0f));
+
+		graphics::Texture* bgTexture = Resources::Find<graphics::Texture>(L"Map");
+		bgSr->SetTexture(bgTexture);
+
+		// 게임 오브젝트 생성 후에 레이어와 게임 오브젝트들의 init함수를 호출
+		Scene::Initialize();
 
 		/*{
 			GameObject* puddy = object::Instantiate<GameObject>
@@ -56,8 +75,8 @@ namespace geun
 	void PlayScene::Render(HDC hdc)
 	{
 		Scene::Render(hdc);
-		wchar_t str[50] = L"Play Scene";
-		TextOut(hdc, 0, 0, str, 10);
+		//wchar_t str[50] = L"Play Scene";
+		//TextOut(hdc, 0, 0, str, 10);
 	}
 	void PlayScene::OnEnter()
 	{
