@@ -26,31 +26,49 @@ namespace geun
 	{
 
 		//main camera
-		GameObject* camera = object::Instantiate<GameObject>(enums::eLayerType::None, Vector2(343.0, 442.0f));
+		GameObject* camera = object::Instantiate<GameObject>(enums::eLayerType::Particle, Vector2(343.0, 442.0f));
 		Camera* cameraComp = camera->AddComponent<Camera>();
 		renderer::mainCamera = cameraComp;
 		//camera->AddComponent<PlayerScript>();
 
 
-		mPlayer = object::Instantiate<Player>(enums::eLayerType::Player);
+		mPlayer = object::Instantiate<Player>(enums::eLayerType::Particle);
 		// SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
 		// sr->SetSize(Vector2(3.0f, 3.0f));
 		mPlayer->AddComponent<PlayerScript>();
 
-		graphics::Texture* pacmanTexture = Resources::Find<graphics::Texture>(L"Cat");
+		/*graphics::Texture* pacmanTexture = Resources::Find<graphics::Texture>(L"MapleEffect");
 		Animator* animator = mPlayer->AddComponent<Animator>();
 		animator->CreateAnimation(L"CatFrontMove", pacmanTexture
-			, Vector2(0.0f, 0.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.3f);
+			, Vector2(0.0f, 0.0f), Vector2(386.0f, 246.0f), Vector2::Zero, 8, 0.1f);
+		animator->PlayAnimation(L"CatFrontMove", true);*/
 
-		animator->PlayAnimation(L"CatFrontMove", true);
-		// sr->SetTexture(pacmanTexture);
+		graphics::Texture* pacmanTexture = Resources::Find<graphics::Texture>(L"Cat");
+		Animator* animator = mPlayer->AddComponent<Animator>();
+		animator->CreateAnimation(L"DownWalk", pacmanTexture
+			, Vector2(0.0f, 0.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+		animator->CreateAnimation(L"RightWalk", pacmanTexture
+			, Vector2(0.0f, 32.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+		animator->CreateAnimation(L"UpWalk", pacmanTexture
+			, Vector2(0.0f, 64.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+		animator->CreateAnimation(L"LeftWalk", pacmanTexture
+			, Vector2(0.0f, 96.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+		animator->CreateAnimation(L"SitDown", pacmanTexture
+			, Vector2(0.0f, 128.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
+		animator->CreateAnimation(L"Grooming", pacmanTexture
+			, Vector2(0.0f, 160.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.1f);
 
+		animator->PlayAnimation(L"SitDown", false);
 
-		GameObject* bg = object::Instantiate<GameObject>(enums::eLayerType::BackGround);
+		mPlayer->GetComponent<Transform>()->SetPosition(Vector2(100.0f, 100.0f));
+		mPlayer->GetComponent<Transform>()->SetScale(Vector2(2.0f, 2.0f));
+		//mPlayer->GetComponent<Transform>()->SetRotation(30.0f);
+
+		GameObject* bg = object::Instantiate<GameObject>(enums::eLayerType::Player);
 		SpriteRenderer* bgSr = bg->AddComponent<SpriteRenderer>();
-		bgSr->SetSize(Vector2(3.0f, 3.0f));
+		//bgSr->SetSize(Vector2(3.0f, 3.0f));
 
-		graphics::Texture* bgTexture = Resources::Find<graphics::Texture>(L"Map");
+		graphics::Texture* bgTexture = Resources::Find<graphics::Texture>(L"Bubble");
 		bgSr->SetTexture(bgTexture);
 
 		// 게임 오브젝트 생성 후에 레이어와 게임 오브젝트들의 init함수를 호출
