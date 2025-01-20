@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="geun::EndScene" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAASAAAAAAIAAAAAAAAAAABBAAAAAAAAA=</HashCode>
+      <FileName>geunEndScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::PlayScene" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAACAAAAAQAAAAAAIAAACAAQAAAAAJAAAAAAAAA=</HashCode>
+      <FileName>geunPlayScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::TitleScene" Collapsed="true">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAIIAAAAAAAIAAABAAAAAAAAA=</HashCode>
+      <FileName>geunTitleScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Player" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAIAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>geunPlayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::PlayerScript" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAQAAAAAAIAAAAAAAgAAAABAAAAAAAAA=</HashCode>
+      <FileName>geunPlayerScript.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Application" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAQABAABQFAQAAgIQBACAACAAAAABEAAEQAAAI=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunApplication.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Camera" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAQBAQAAAIAAAQAAACAAAABAAABAAACA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunCamera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::GameObject" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAAAAIAQAAAoAAJAAAAAAAAAAAABAAAAIAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunGameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Component" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAIAIAAAQAAAAAAIBAAAAAAAAEAABBCAAAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Entity" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAgAQAAABAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Input" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="geun::Input::Key" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunInput.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAgAAQACCEAAAAwAKAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunInput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Layer" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAQAAIAAAQAAAAAAIAAAAAAAAAAEABAAAAAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Resource" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAIAAAAAAAAAAIABAAAAACIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunResource.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Resources" Collapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunResources.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Scene" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAAAEAAAQAAgAAAIAAAQAAQAAAABJAAAAAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::SceneManager" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAAAAAQAAAABAKAAAAAAAAAgAABAAACAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunSceneManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Script" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAIAAAAAAAAAAAABAAAAAhAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunScript.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::SpriteRenderer" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQQAAAAAAAAAQBAAAAIIAAAACAAAAAAABAAAAAAIAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunSpriteRenderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Time" Collapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAESABAAAAAAAAAAAAAAACABAAAAEAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunTime.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::Transform" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQAAAAAAIAQAAAAAAgAAABAAAAAAAoA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunTransform.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geun::graphics::Texture" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAAQAAAAhAAAAAAAABBQABAEAAAAAAIAAEQAAAI=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunTexture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="geun::math::Vector2" Collapsed="true">
+    <Position X="21.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAQAAAAAAAABgAAAAAIA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunMath.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="geun::eKeyState" Collapsed="true">
+    <Position X="25.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEEAAI=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunInput.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="geun::eKeyCode" Collapsed="true">
+    <Position X="23.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAvv//YQM=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunInput.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="geun::enums::eComponentType" Collapsed="true">
+    <Position X="21.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAgIAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunEnums.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="geun::enums::eLayerType" Collapsed="true">
+    <Position X="21.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAgAAAAAAAAAAAAAAAAAQEAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunEnums.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="geun::enums::eResourceType" Collapsed="true">
+    <Position X="23.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAIIAAAAAAAA=</HashCode>
+      <FileName>C:\Engine\GeunEngine\GeunEngine_SOURCE\geunEnums.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

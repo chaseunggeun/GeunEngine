@@ -12,6 +12,7 @@
 #include "geunPlayerScript.h"
 #include "geunCamera.h"
 #include "geunRenderer.h"
+#include "geunAnimator.h"
 
 namespace geun
 {
@@ -31,18 +32,21 @@ namespace geun
 		//camera->AddComponent<PlayerScript>();
 
 
-		mPlayer = object::Instantiate<Player>
-			(enums::eLayerType::Player);
-		SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
-		sr->SetSize(Vector2(3.0f, 3.0f));
+		mPlayer = object::Instantiate<Player>(enums::eLayerType::Player);
+		// SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
+		// sr->SetSize(Vector2(3.0f, 3.0f));
 		mPlayer->AddComponent<PlayerScript>();
 
-		graphics::Texture* pacmanTexture = Resources::Find<graphics::Texture>(L"PacMan");
-		sr->SetTexture(pacmanTexture);
+		graphics::Texture* pacmanTexture = Resources::Find<graphics::Texture>(L"Cat");
+		Animator* animator = mPlayer->AddComponent<Animator>();
+		animator->CreateAnimation(L"CatFrontMove", pacmanTexture
+			, Vector2(0.0f, 0.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.3f);
+
+		animator->PlayAnimation(L"CatFrontMove", true);
+		// sr->SetTexture(pacmanTexture);
 
 
-		GameObject* bg = object::Instantiate<GameObject>
-			(enums::eLayerType::BackGround);
+		GameObject* bg = object::Instantiate<GameObject>(enums::eLayerType::BackGround);
 		SpriteRenderer* bgSr = bg->AddComponent<SpriteRenderer>();
 		bgSr->SetSize(Vector2(3.0f, 3.0f));
 
