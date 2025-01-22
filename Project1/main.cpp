@@ -141,6 +141,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    geun::LoadResources();
    geun::LoadScenes();
 
+   int a = 0;
+   srand((unsigned int)(&a));
+
    return TRUE;
 }
 

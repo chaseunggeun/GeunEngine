@@ -68,7 +68,7 @@ namespace geun
 			func.BlendOp = AC_SRC_OVER;
 			func.BlendFlags = 0;
 			func.AlphaFormat = AC_SRC_ALPHA;
-			func.SourceConstantAlpha = 125; // 0(투명) ~ 255(불투명)
+			func.SourceConstantAlpha = 255; // 0(투명) ~ 255(불투명)
 
 			HDC imgHdc = mTexture->GetHdc();
 			AlphaBlend(hdc

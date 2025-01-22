@@ -20,6 +20,12 @@
     <ClInclude Include="geunPlayerScript.h">
       <Filter>Scripts</Filter>
     </ClInclude>
+    <ClInclude Include="geunCat.h">
+      <Filter>Contents</Filter>
+    </ClInclude>
+    <ClInclude Include="geunCatScript.h">
+      <Filter>Scripts</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Scenes">
@@ -46,6 +52,12 @@
       <Filter>Scenes</Filter>
     </ClCompile>
     <ClCompile Include="geunPlayerScript.cpp">
+      <Filter>Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="geunCat.cpp">
+      <Filter>Contents</Filter>
+    </ClCompile>
+    <ClCompile Include="geunCatScript.cpp">
       <Filter>Scripts</Filter>
     </ClCompile>
   </ItemGroup>

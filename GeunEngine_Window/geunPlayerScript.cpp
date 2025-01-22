@@ -60,9 +60,15 @@ namespace geun
 			mAnimator->PlayAnimation(L"LeftWalk");
 		}
 		if (Input::GetKey(eKeyCode::Up))
+		{
 			mState = PlayerScript::eState::Walk;
+			mAnimator->PlayAnimation(L"UpWalk");
+		}
 		if (Input::GetKey(eKeyCode::Down))
+		{
 			mState = PlayerScript::eState::Walk;
+			mAnimator->PlayAnimation(L"DownWalk");
+		}
 	}
 	void PlayerScript::move()
 	{
