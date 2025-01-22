@@ -7,6 +7,8 @@
 #include <algorithm>
 #include <string>
 #include <map>
+#include <functional>
+
 
 #include "geunMath.h"
 

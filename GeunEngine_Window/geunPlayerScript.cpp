@@ -8,7 +8,7 @@
 namespace geun
 {
 	PlayerScript::PlayerScript()
-		:mState(PlayerScript::eState::SitDown)
+		:mState(PlayerScript::eState::Idle)
 		, mAnimator(nullptr)
 	{
 	}
@@ -27,13 +27,16 @@ namespace geun
 		}
 		switch (mState)
 		{
-		case geun::PlayerScript::eState::SitDown:
-			sitDown();
+		case geun::PlayerScript::eState::Idle:
+			idle();
 			break;
 		case geun::PlayerScript::eState::Walk:
 			move();
 			break;
 		case geun::PlayerScript::eState::Sleep:
+			break;
+		case geun::PlayerScript::eState::GiveWater:
+			giveWater();
 			break;
 		case geun::PlayerScript::eState::Attack:
 			break;
@@ -47,14 +50,17 @@ namespace geun
 	void PlayerScript::Render(HDC hdc)
 	{
 	}
-	void PlayerScript::sitDown()
+	void PlayerScript::idle()
 	{
-		if (Input::GetKey(eKeyCode::Right))
+		if (Input::GetKey(eKeyCode::LButton))
 		{
-			mState = PlayerScript::eState::Walk;
-			mAnimator->PlayAnimation(L"RightWalk");
+			mState = PlayerScript::eState::GiveWater;
+			mAnimator->PlayAnimation(L"FrontGiveWater", false);
+
+			Vector2 mousePos = Input::GetMousePosition();
+
 		}
-		if (Input::GetKey(eKeyCode::Left))
+		/*if (Input::GetKey(eKeyCode::Left))
 		{
 			mState = PlayerScript::eState::Walk; 
 			mAnimator->PlayAnimation(L"LeftWalk");
@@ -68,7 +74,7 @@ namespace geun
 		{
 			mState = PlayerScript::eState::Walk;
 			mAnimator->PlayAnimation(L"DownWalk");
-		}
+		}*/
 	}
 	void PlayerScript::move()
 	{
@@ -97,9 +103,17 @@ namespace geun
 		if (Input::GetKeyUp(eKeyCode::Right) || Input::GetKeyUp(eKeyCode::Left)
 			|| Input::GetKeyUp(eKeyCode::Up) || Input::GetKeyUp(eKeyCode::Down))
 		{
-			mState = PlayerScript::eState::SitDown;
+			mState = PlayerScript::eState::Idle;
 			mAnimator->PlayAnimation(L"SitDown", false);
 		}
 
+	}
+	void PlayerScript::giveWater()
+	{
+		if (mAnimator->IsComplete())
+		{
+			mState = eState::Idle;
+			mAnimator->PlayAnimation(L"Idle", false);
+		}
 	}
 }
